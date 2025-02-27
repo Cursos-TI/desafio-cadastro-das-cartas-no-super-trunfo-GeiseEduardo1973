@@ -1,9 +1,7 @@
-#include <stdio.h>
-
 int main() {
 
     // Desafio Super Trunfo
-    // Nível: Novato
+    // Nível: Aventureiro
 
     //Variáveis
     char Estado[30];
@@ -13,6 +11,8 @@ int main() {
     float AreaKm2;
     float PIB;
     int PontosTuristicos;
+    float DensidadePopulacional;
+    float PibPercapta;
 
     //Entrada de dados
 
@@ -38,13 +38,22 @@ int main() {
     printf("Digite os pontos turísticos: \n");
     scanf("%d", &PontosTuristicos);
 
+
+    // Cálculos
+    DensidadePopulacional = Populacao / AreaKm2;
+    PibPercapta = PIB / Populacao;
+
+    //Saída de Dados:
     printf("Estado: %s\n", Estado);
     printf("Código: %s\n", Codigo);
     printf("Cidade: %s\n", Cidade);
     printf("População: %d\n", Populacao);
     printf("Área em Km2: %f\n", AreaKm2);
     printf("PIB em R$: %f\n", PIB);
-    printf("Pontos Turísticos: %d\n", PontosTuristicos);
+    printf("Densidade Populacional: %.2f\n", DensidadePopulacional);
+    printf("PIB per capita: %.2f\n", PibPercapta);
+
+
 
     //Carta 02 Estado B
     printf("Digite o nome do estado: \n");
@@ -68,6 +77,11 @@ int main() {
     printf("Digite os pontos turísticos: \n");
     scanf("%d", &PontosTuristicos);
 
+    // Cálculos
+    DensidadePopulacional = Populacao / AreaKm2;
+    PibPercapta = PIB / Populacao;
+
+    //Saída de Dados:
     printf("Estado: %s\n", Estado);
     printf("Código: %s\n", Codigo);
     printf("Cidade: %s\n", Cidade);
@@ -75,6 +89,8 @@ int main() {
     printf("Área em Km2: %f\n", AreaKm2);
     printf("PIB em R$: %f\n", PIB);
     printf("Pontos Turísticos: %d\n", PontosTuristicos);
+    printf("Densidade Populacional: %.2f\n", DensidadePopulacional);
+    printf("PIB per capita: %.2f\n", PibPercapta);
 
     return 0;
 }
